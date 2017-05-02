@@ -9,20 +9,22 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
-import static java.awt.image.ImageObserver.HEIGHT;
-import static java.awt.image.ImageObserver.WIDTH;
 
 public class MyGdxGame extends ApplicationAdapter {
 	SpriteBatch batch;
 	TextureRegion stand, jump;
+    Animation walk;
+
 	float x, y, xv, yv;
 	boolean canJump, faceRight = true;
-	Animation walk;
-	float time;
+    float time;
+
 
 	static final float MAX_VELOCITY = 500;
-	static final int DRAW_WIDTH = WIDTH*3;
-	static final int DRAW_HEIGHT = HEIGHT*3;
+	static final int WIDTH = 18;
+	static final int HEIGHT = 26;
+	static final int DRAW_WIDTH = WIDTH * 3;
+	static final int DRAW_HEIGHT = HEIGHT * 3;
 	static final float MAX_JUMP_VELOCITY = 2000;
 	static final int GRAVITY = -50;
 
