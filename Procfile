@@ -1,0 +1,1 @@
+web: java -jar core/build/libs/core-1.0.jar
